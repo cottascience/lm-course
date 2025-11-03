@@ -3,26 +3,21 @@
 A simple, hands-on course on language models. Learn by doing.
 
 ## Quick Start (Local Setup)
-
 ```bash
 # Install UV
 curl -LsSf https://astral.sh/uv/install.sh | sh
-
 # Clone and setup
 git clone https://github.com/yourusername/lm-course.git
 cd ttlm
 uv sync
-
 # Start learning
-uv run python -m scripts.pretrain --experiment=default (or any other experiment, like default_cpu for cpu only job)
-```
+uv run python -m scripts.pretrain --experiment=default # (or any other experiment, like default_cpu for cpu only job)
 ```
 
+```python
 ## Using Google Colab
-
 1. Open a new notebook on colab and start a new runtime (GPU or CPU, recommended GPU)
-2. Run the following code in a cell: 
-
+2. Run the following code in a cell:
 ```python
 from google.colab import drive
 import os
@@ -42,10 +37,7 @@ password = getpass.getpass("Enter SSH password: ")
 launch_ssh_cloudflared(password=password)
 ```
 
-
 ## Course Structure
-
-
 ```
 lm-course/
 ├── notes/          # Lecturer's notes
