@@ -53,3 +53,7 @@ htmlcov/
 
 # Environment variables
 .env
+
+# Output files
+logs/
+
