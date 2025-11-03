@@ -6,7 +6,7 @@ from ttlm.engine import generate
 def main():
     parser = argparse.ArgumentParser(description="Generate samples from a checkpoint")
     parser.add_argument("--ckpt", type=str, help="Path to checkpoint file")
-    parser.add_argument("--max_new_tokens", type=int, default=100, help="Number of tokens to generate)
+    parser.add_argument("--max_new_tokens", type=int, default=100, help="Number of tokens to generate")
     parser.add_argument("--temperature", type=float, default=1.0, help="Sampling temperature")
     parser.add_argument("--top_k", type=int, default=None, help="Top-k sampling")
     parser.add_argument("--num_samples", type=int, default=1, help="Number of samples to generate")
