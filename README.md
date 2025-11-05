@@ -1,6 +1,6 @@
 # Language Models Course
 
-A simple, hands-on course on language models. Learn by doing.
+A simple, mini hands-on course on language models. Learn by doing.
 
 ## Quick Start (Local Setup)
 ```bash
@@ -67,6 +67,30 @@ A full manuscript with notes is being prepared. For now, you can find some slide
 - Python/torch programming
 - Basic linear algebra
 - Some familiarity and previous experience with neural networks (helpful)
+
+## Reading List
+A (too short and biased) reading list, that can be helpful to get you started:
+
+- Transformers:
+  - [Attention is All You Need](https://arxiv.org/abs/1706.03762)
+  - [Formal Algorithms for Transformers](https://arxiv.org/abs/2207.09238)
+  - [Positional Encodings](https://karlstratos.com/notes/position_emb.pdf)
+- Data and Pretraining Pipeline:
+  - [DataComp-LM](https://proceedings.neurips.cc/paper_files/paper/2024/hash/19e4ea30dded58259665db375885e412-Abstract-Datasets_and_Benchmarks_Track.html)
+  - [LLAMA-3](https://arxiv.org/abs/2407.21783)
+- Post-training:
+  - [RLHF](https://www.alignmentforum.org/posts/eoHbneGvqDu25Hasc/rl-with-kl-penalties-is-better-seen-as-bayesian-inference)
+  - [LoRA](https://arxiv.org/abs/2106.09685)
+  - [Inspiration to understand RL](https://proceedings.mlr.press/v15/ross11a)
+- Inference and Deployment:
+  - [KV cache](https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms)
+
+## Side Quests
+
+- Implement BPE and compare performance with character-level tokenizer;
+- Implement KV cache and compare peformance with naive inference;
+- Implement a simple RLHF tuning using LLM-generated preference dataset, e.g., make the model speak like a pirate;
+- Implement a forward pass with flash attention for the model.
 
 ## License
 
